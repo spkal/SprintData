@@ -85,7 +85,7 @@ jun 2012 spk Text 99
 jun 2012 spk Night 57
 jun 2012 spk PictureMail 0
 jun 2012 spk S3G 593928
-jun 2012 spk S3GRoaming 26927V
+jun 2012 spk S3GRoaming 26927
 jun 2012 spk S4G 7447
 jun 2012 akk Anytime 7
 jun 2012 akk Mobile 24
