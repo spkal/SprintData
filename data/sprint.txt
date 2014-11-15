@@ -1,4 +1,4 @@
-Month Year  Name Service Unit
+Month Year Name Service Unit
 mar 2012 skk Anytime 37
 mar 2012 skk Mobile 50
 mar 2012 skk Text 194
@@ -431,7 +431,6 @@ aug 2013 akk PictureMail 41
 aug 2013 akk S3G 321788
 aug 2013 akk S3GRoaming 348
 aug 2013 akk S4G 70719
-
 sep 2013 skk Anytime 0
 sep 2013 skk Mobile 1
 sep 2013 skk Text 1
@@ -456,8 +455,7 @@ sep 2013 akk PictureMail 18
 sep 2013 akk S3G 720983
 sep 2013 akk S3GRoaming 869
 sep 2013 akk S4G 185016
-
-oct 2013 skk Anytime 
+oct 2013 skk Anytime 0
 oct 2013 skk Mobile 0
 oct 2013 skk Text 0
 oct 2013 skk Night 0
@@ -481,7 +479,6 @@ oct 2013 akk PictureMail 14
 oct 2013 akk S3G 379036
 oct 2013 akk S3GRoaming 292
 oct 2013 akk S4G 234289
-
 nov 2013 skk Anytime 0
 nov 2013 skk Mobile 0
 nov 2013 skk Text 0
@@ -506,7 +503,6 @@ nov 2013 akk PictureMail 20
 nov 2013 akk S3G 684207
 nov 2013 akk S3GRoaming 475
 nov 2013 akk S4G 102857
-
 dec 2013 skk Anytime 0
 dec 2013 skk Mobile 0
 dec 2013 skk Text 0
@@ -627,7 +623,6 @@ apr 2014 akk PictureMail 8
 apr 2014 akk S3G 379762
 apr 2014 akk S3GRoaming 2925
 apr 2014 akk S4G 123932
-
 may 2014 skk Anytime 0
 may 2014 skk Mobile 0
 may 2014 skk Text 0
