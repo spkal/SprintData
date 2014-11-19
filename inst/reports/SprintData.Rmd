@@ -1,0 +1,65 @@
+---
+title: "SprintData"
+author: "Stephen Kaluzny"
+date: "11/16/2014"
+output: html_document
+---
+This is an analysis of family mobile phone usages under Sprint.
+
+# The Data
+The data from the monthly Sprint bill.
+It covers the months of March 2012 through September 2014.
+
+```{r}
+# Get the data from Github:
+URL <- "https://raw.github.com/spkal/SprintData/master/data/sprint.txt"
+tmpDataFile <- tempfile("Data")
+download.file(URL, destfile=tmpDataFile, method="wget")
+SprintData <- read.table(tmpDataFile, sep=" ", header=TRUE, stringsAsFactors=FALSE)
+SprintData$Date <- with(SprintData,
+    as.Date(paste(Year, Month, "15", sep="-"), format="%Y-%b-%d"))
+SprintData$User <- as.factor(SprintData$User)
+```
+
+# Usage
+The family plan included 1500 Anytime minutes.
+These can be used at any time to call any phone (land or cellular).
+The minutes are shared among all the users on the plan.
+
+For the plots we will use the `dplyr` and `ggplot2` packages.
+```{r}
+library(dplyr)
+library(ggplot2)
+```
+
+## Anytime Minutes by User
+```{r}
+SprintData %>%
+  filter(Service == "Anytime") %>%
+  ggplot(aes(Date, Unit)) + geom_line(aes(color=User)) +
+  facet_grid(User ~ .)
+```
+
+## Sum of Anytime Minutes
+```{r}
+SprintData %>%
+  group_by(Date) %>%
+  filter(Service == "Anytime") %>%
+  group_by(Date) %>%
+  summarise(SumAnytime = sum(Unit)) %>%
+  ggplot(aes(Date, SumAnytime)) + geom_line() +
+  ggtitle("All Anytime Minutes by Month")
+```
+## Data Usage
+The plan includes unlimited data usage.
+Data is either S3G, S3GRoaming or S4G.
+We sum those up for each user.
+```{r}
+SprintData %>%
+  group_by(Date, User) %>%
+  filter(Service == "S3G" | Service == "S3GRoaming" | Service == "S4G") %>%
+  summarise(SumData = sum(Unit)) %>%
+  ggplot(aes(Date, SumData)) + geom_line(aes(color=User)) +
+  facet_grid(User ~ .) +
+  ggtitle("Data Use by Month")
+```
