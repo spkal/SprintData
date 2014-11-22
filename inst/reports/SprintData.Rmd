@@ -37,7 +37,8 @@ library(ggplot2)
 SprintData %>%
   filter(Service == "Anytime") %>%
   ggplot(aes(Date, Unit)) + geom_line(aes(color=User)) +
-  facet_grid(User ~ .)
+  facet_grid(User ~ .) +
+  ggtitle("Anytime Minutes by Month")
 ```
 
 ## Sum of Anytime Minutes
@@ -62,4 +63,12 @@ SprintData %>%
   ggplot(aes(Date, SumData)) + geom_line(aes(color=User)) +
   facet_grid(User ~ .) +
   ggtitle("Data Use by Month")
+```
+## Text Messages by User
+```{r}
+SprintData %>%
+  filter(Service == "Text") %>%
+  ggplot(aes(Date, Unit)) + geom_line(aes(color=User)) +
+  facet_grid(User ~ .) +
+  ggtitle("Text Count by Month")
 ```
