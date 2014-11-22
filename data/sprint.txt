@@ -316,7 +316,7 @@ apr 2013 skk Mobile 0
 apr 2013 skk Text 3
 apr 2013 skk Night 0
 apr 2013 skk PictureMail 1
-apr 2013 skk S3G 46575
+apr 2013 skk S3G 465755
 apr 2013 skk S3GRoaming 0
 apr 2013 skk S4G 381683
 apr 2013 spk Anytime 11
@@ -462,7 +462,7 @@ oct 2013 skk Night 0
 oct 2013 skk PictureMail 0
 oct 2013 skk S3G 14168
 oct 2013 skk S3GRoaming 0
-oct 2013 skk S4G 1085452
+oct 2013 skk S4G 108452
 oct 2013 spk Anytime 1
 oct 2013 spk Mobile 7
 oct 2013 spk Text 173
@@ -743,3 +743,28 @@ sep 2014 akk PictureMail 24
 sep 2014 akk S3G 286685
 sep 2014 akk S3GRoaming 0
 sep 2014 akk S4G 242470
+
+new 2014 skk Anytime 0
+new 2014 skk Mobile 0
+new 2014 skk Text 0
+new 2014 skk Night 0
+new 2014 skk PictureMail 0
+new 2014 skk S3G 0
+new 2014 skk S3GRoaming 0
+new 2014 skk S4G 0
+new 2014 spk Anytime 0
+new 2014 spk Mobile 0
+new 2014 spk Text 0
+new 2014 spk Night 0
+new 2014 spk PictureMail 0
+new 2014 spk S3G 0
+new 2014 spk S3GRoaming 0
+new 2014 spk S4G 0
+new 2014 akk Anytime 0
+new 2014 akk Mobile 0
+new 2014 akk Text 0
+new 2014 akk Night 0
+new 2014 akk PictureMail 0
+new 2014 akk S3G 0
+new 2014 akk S3GRoaming 0
+new 2014 akk S4G 0
