@@ -7,5 +7,6 @@ Author: Stephen Kaluzny
 Maintainer: Stephen Kaluzny <spkal@washington.edu>
 Description: Data on Spring mobile usage collected from each billing.
   Includes functions to read the data and to produce some
-  basic plots.
+  basic plots. Starting with may 2015 data, data use is given in
+  Gb by Sprint.
 License: GPL2
